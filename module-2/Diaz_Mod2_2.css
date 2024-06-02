@@ -1,0 +1,77 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+html, body {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+}
+
+/* Container styles */
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-align: left;
+    padding-top: 15px;
+}
+
+/* Paragraph styles */
+p {
+    margin-bottom: 15px;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+.intro {
+    text-indent: 2em;
+    font-weight: 400;
+}
+
+.sentence {
+    font-style: italic;
+}
+
+/* Address styles */
+address {
+    text-align: center;
+    margin-top: 20px;
+}
+
+address a {
+    color: #4F3674;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+address a:hover {
+    text-decoration: underline;
+    background-color: #D6A800;
+}
+
+address a:visited {
+    color: #666;
+}
