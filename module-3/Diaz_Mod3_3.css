@@ -1,0 +1,67 @@
+/* Centering the h1 title */
+h1 {
+    text-align: center;
+}
+
+
+/* Setting width of side-by-side div */
+.left-side,
+.right-side {
+    width: 45%;float:left;
+}
+
+/* Setting width of last div to 100% */
+.footer {
+    width: 100%;
+}
+
+/* Adding margin-top to last div */
+.footer {
+    margin-top: 60%;
+}
+
+/* Setting font weight of h3 tags */
+h3 {
+    font-weight: 500;
+}
+
+/* Setting font weight of lists */
+ol,
+ul {
+    font-weight: 300;
+}
+
+/* Styling ordered list */
+ol {
+    border: 1px solid red;
+    border-radius: 15px;
+    padding-bottom:20px;
+    padding-left:10px;
+    list-style: decimal inside;
+}
+
+/* Styling unordered list */
+ul {
+    border: 1px dashed red;
+    border-radius: 15px;
+    padding-bottom:20px;
+    padding-left:10px;
+    list-style: upper-roman inside;
+}
+/* Styling list item */
+li {
+
+    padding-left:10px;
+    padding:3px;
+}
+
+/* Adding underline on hover for links */
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Float and margin for the bottom div */
+.footer {
+    float: right;
+    margin-bottom: 20px;
+}
