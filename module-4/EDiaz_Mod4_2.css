@@ -1,0 +1,66 @@
+/* EDiaz_Mod4_2.css */
+
+body {
+    background-color: #333; /* Dark gray background */
+    color: #fff; /* Text color (white) */
+    font-family: Arial, sans-serif; /* Optional: Font family */
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply CSS Grid to the image gallery */
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    margin-top: 10%; 
+    background-color: #fff; /* White background for the gallery */
+    padding: 20px; /* Optional: Add padding */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for depth */
+}
+
+/* Center the h1 text */
+h1 {
+    text-align: center;
+    font-size: 2em; 
+}
+
+/* Center the h3 text */
+h3 {
+    text-align: center;
+    font-size: 1.25em; 
+    margin-bottom: 10px; 
+}
+
+/* Center the image and style the figcaption */
+figure {
+    text-align: center;
+    margin: 0;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    margin-top: 10px;
+}
+
+/* Container styling */
+#container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff; 
+    font-style: oblique;
+    font-size: 1em; 
+}
