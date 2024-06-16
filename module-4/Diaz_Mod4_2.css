@@ -3,7 +3,7 @@
 body {
     background-color: #333; /* Dark gray background */
     color: #fff; /* Text color (white) */
-    font-family: Arial, sans-serif; /* Optional: Font family */
+    font-family: Arial, sans-serif; 
     margin: 0;
     padding: 0;
 }
@@ -14,10 +14,10 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px; 
     margin-top: 10%; 
-    background-color: #fff; /* White background for the gallery */
-    padding: 20px; /* Optional: Add padding */
-    border-radius: 10px; /* Optional: Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for depth */
+    background-color: #fff; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 /* Center the h1 text */
