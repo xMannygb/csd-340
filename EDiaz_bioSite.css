@@ -1,0 +1,102 @@
+
+body {
+    background-color: #94d769; /* Lime green background */
+    color: #000000; /* Black text for good contrast */
+    font-family: Arial, sans-serif; 
+    margin: 20px;
+    padding: 10px;
+    line-height: 1.6;
+}
+
+/* Container for content */
+#container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF; /* White background for content */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1, h2 {
+    color: #008000; /* Darker green for headings */
+    text-align: center;
+}
+
+/* Introductory paragraphs */
+.intro {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+/* Individual sentences */
+.sentence {
+    display: block;
+    margin: 10px 0;
+}
+
+/* Horizontal rule */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 40px 0;
+}
+
+/* Address information */
+address {
+    font-style: normal;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Links */
+a {
+    color: #006400; /* Dark green for links */
+    text-decoration: none;
+}
+
+/* Hover effect for links */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation bar */
+#navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #008000; /* Darker green for navbar background */
+    padding: 10px;
+    border-bottom: 2px solid #006400; /* Darker border */
+}
+
+/* Styling for navigation links */
+#navbar a {
+    color: #FFFFFF; /* White text for links */
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover effect for navigation links */
+#navbar a:hover {
+    background-color: #006400; /* Darker green on hover */
+    border-radius: 5px;
+}
+
+/* Additional specific styles for sections */
+.content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content ul li {
+    margin-bottom: 5px;
+}
