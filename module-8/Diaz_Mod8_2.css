@@ -2,48 +2,77 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #4e99e3;
 }
 
+/* Header styling */
 header {
-    background-color: #cc3;
-    padding: 10px 0;
+    background-color: #4e99e3;
+    color: #000000;
+    padding: 20px;
     text-align: center;
-    color: white;
 }
 
-nav {
-    margin-top: 10px;
+/* H1 styling */
+header h1 {
+    font-weight: 400;
 }
 
-nav a {
-    color: white;
+/* Navbar styling */
+#navbar {
+    overflow: hidden;
+    background-color: #ffffff;
+    border-bottom: 15px solid #2f6ba7;
+    padding: 2;
+}
+
+/* Navbar links */
+#navbar a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    margin: 0 10px;
 }
 
-.container {
+#navbar a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Container styling */
+#container {
     margin: 2% 5% 100px 5%;
-}
-
-.card {
-    margin: 20px;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #fff;
 }
 
+/* Card styling */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 50%;
+    background-color: #ffffff;
+    margin: 20px auto; /* Add some space between cards */
+    min-width: 300px; /* Ensure a minimum width */
+    max-width: 800px; /* Prevent cards from being too wide */
+}
+
+/* Card title styling */
 .card-title {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #cc3;
+    text-align: center;
+    font-size: 2em;
+    color: #000000;
+    font-weight: 400;
+    padding-top: 10px;
 }
 
+/* Card content styling */
 .card-content {
-    font-size: 1em;
+    padding: 2px 16px;
 }
 
+/* Movies table styling */
 #movies {
     border-collapse: collapse;
     width: 100%;
@@ -54,8 +83,6 @@ nav a {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #cc3;
-    color: white;
 }
 
 #movies td {
@@ -63,13 +90,33 @@ nav a {
     padding: 8px;
 }
 
+/* Footer styling */
 footer {
+    background-color: #ffffff;
     position: fixed;
-    left: 0;
     bottom: 0;
+    left: 0;
     width: 100%;
-    background-color: #cc3;
+    padding: 10px 0;
+    text-align: left; /* Align text to the left */
+    color: #4e99e3;
+    font-style: italic;
+}
+
+footer p {
     color: white;
-    text-align: left;
-    padding: 10px;
+    font-weight: 400;
+    padding-left: 10px; /* Adjust padding as needed */
+    float: left;
+    font-style: italic;
+}
+
+footer a {
+    color: #000000;
+    text-decoration: none;
+    padding-left: 10px; /* Adjust padding as needed */
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
