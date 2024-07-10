@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+        function displayImage(imageFile, section) {
+            var displayDiv = document.getElementById(section);
+            var newImage = document.createElement("img");
+            newImage.className = "mainImage";
+            newImage.style.width = "300px";
+            newImage.style.height = "200px";
+            newImage.src = imageFile;
+            newImage.alt = "Large Image";
+            displayDiv.appendChild(newImage);
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="Diaz_Mod10_3.css">
+</head>
+<body>
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+    <div class="content-wrapper">
+        <div class="image-container"> <!-- Added this container -->
+            <div class="container">
+                <a href="#"
+                   onmouseover="shining.src='shining_02.jpg';"
+                   onmouseout="shining.src='shining_01.jpg';"
+                   onclick="displayImage('shining_02.jpg', 'shiningDisplay')">
+                    <img border="2" name="shining" src="shining_01.jpg" alt="Here is Johnny!!">
+                </a>
+            </div>
+            <br />
+            <div class="text"
+                 onmouseover="this.style.color='red';"
+                 onmouseout="this.style.color='black';">
+                Run your mouse over the image to change. Click the image to display.
+            </div>
+            <div id="shiningDisplay">
+                <!-- The clicked image will be displayed here -->
+            </div>
+            <br />
+            <div class="container">
+                <a href="#"
+                   onmouseover="indy.src='indy_02.jpg';"
+                   onmouseout="indy.src='indy_01.jpg';"
+                   onclick="displayImage('indy_02.jpg', 'indyDisplay')">
+                    <img border="2" name="indy" src="indy_01.jpg" alt="Indy Jones">
+                </a>
+            </div>
+            <br />
+            <div class="text"
+                 onmouseover="this.style.color='red';"
+                 onmouseout="this.style.color='black';">
+                Run your mouse over the image to change. Click the image to display.
+                <br />
+               
+            </div>
+            <div id="indyDisplay">
+                <!-- The clicked image will be displayed here -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
