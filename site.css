@@ -3,6 +3,10 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    color: #000000; /* Black font color */
+    background-color: #ffdecb; /* gray background */
+    margin: 30px;
+    padding: 0;
 }
 
 #container {
@@ -12,9 +16,9 @@ body {
 }
 
 h1, h2, h3, h4 {
-    background-color: #800020; 
-    color: #FFFFFF; 
-    border: 1px solid #D6A800;
+    background-color: #c36022; 
+    color: #ffffff; 
+    border: 1px solid #0099d6;
     padding: 10px;
 }
 
@@ -24,9 +28,9 @@ a {
 }
 
 a:hover {
-    color: #005f6b; 
+    color: #000000; 
 }
 
 a:visited {
-    color: #004D40; 
+    color: #000000; 
 }
