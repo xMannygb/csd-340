@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="Diaz_Mod11_2.css">
+    <script>
+        // Array to store the elements
+        let elements = [];
+
+        function addElement() {
+            const input = document.getElementById('inputBox').value;
+            if (input) {
+                elements.push(input);
+                alert(`Added: "${input}" at position ${elements.length}`);
+                document.getElementById('inputBox').value = '';
+            } else {
+                alert('Please enter a value');
+            }
+        }
+
+        // Function that deletes the items added
+        function deleteLastElement() {
+            if (elements.length > 0) {
+                const removed = elements.pop();
+                alert(`Deleted: "${removed}"`);
+            } else {
+                alert('No elements to delete');
+            }
+        }
+
+        // Function to delete a specific item that was added
+        function deleteElementByIndex() {
+            const index = parseInt(prompt('Enter the position of the element to delete:')) - 1;
+            if (index >= 0 && index < elements.length) {
+                const removed = elements.splice(index, 1);
+                alert(`Deleted: "${removed}"`);
+            } else {
+                alert('Invalid position');
+            }
+        }
+
+        //Display
+        function displayElements() {
+            let displayStr = '';
+            elements.forEach((element, index) => {
+                displayStr += `${index + 1}. ${element}\n`;
+            });
+            alert(displayStr || 'No elements to display');
+        }
+
+        // Event listener for Enter key to add element and make it easier to use 
+        document.addEventListener('DOMContentLoaded', () => {
+            const inputBox = document.getElementById('inputBox');
+            inputBox.addEventListener('keypress', (event) => {
+                if (event.key === 'Enter') {
+                    addElement();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+    <input type="text" id="inputBox" placeholder="Enter text here">
+    <button onclick="addElement()">Add</button>
+    <button onclick="deleteLastElement()">Delete Last Entry</button>
+    <button onclick="deleteElementByIndex()">Delete Specific Entry</button>
+    <button onclick="displayElements()">Display</button>
+</body>
+</html>
