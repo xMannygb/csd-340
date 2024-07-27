@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="Diaz_Mod12_2.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #8102a1;
+        }
+        #bookList {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 12.2: JavaScript - Part 4</h1>
+        <div class="left-side">
+            <button onclick="displayTopToBottom()">Top to Bottom</button>
+            <ol id="bookList"><h3>Top 10 Favorite Books</h3></ol>
+            <button onclick="displayBottomToTop()">Bottom to Top</button>
+        </div>
+        <div class="right-side">
+            <ul><h3>5 Things I’ve Learned Since the Course Started</h3>
+                <li>That the font and color fonts on websites are not done on HTML but rather with a secondary code CSS</li>
+                <li>How what users tend to do or the patterns they follow is important in how we design a webpage</li>
+                <li>Fonts have families. Really?</li>
+                <li>How to link CSS to HTML to ensure that the visual side is linked and functional</li>
+                <li>Different headers on html and what each one does in its hierarchy.</li>
+            </ul>
+        </div>
+    </div>        
+    <div class="footer" style="height:60px;margin: auto; text-align: right;">
+        <a href="../index.html">Back to Manny's Portal</a>
+    </div>
+    
+    <script>
+        const books = [
+            { order: 1, title: "Jurassic Park, Michael Crichton" },
+            { order: 2, title: "The Lost World, Michael Crichton" },
+            { order: 3, title: "Prey, Michael Crichton" },
+            { order: 4, title: "Needful Things, Stephen King" },
+            { order: 5, title: "The Maze Runner, James Dashner" },
+            { order: 6, title: "The Hobbit, J.R.R. Tolkien" },
+            { order: 7, title: "The Lord of the Rings, J.R.R. Tolkien" },
+            { order: 8, title: "Dr. Jekyll & Mr. Hyde, R. L. Stevenson" },
+            { order: 9, title: "The World According to Clarkson, Jeremy Clarkson" },
+            { order: 10, title: "Harry Potter Series, J.K. Rowling" }
+        ];
+
+        function displayBooks(bookArray) {
+            const bookList = document.getElementById("bookList");
+            bookList.innerHTML = "<h3>Top 10 Favorite Books</h3>" + bookArray.map(book => `<li data-order="${book.order}">${book.order}. ${book.title}</li>`).join('');
+        }
+
+        function displayTopToBottom() {
+            const sortedBooks = [...books].sort((a, b) => a.order - b.order);
+            displayBooks(sortedBooks);
+        }
+
+        function displayBottomToTop() {
+            const sortedBooks = [...books].sort((a, b) => b.order - a.order);
+            displayBooks(sortedBooks);
+        }
+
+      
+        displayTopToBottom();
+    </script>
+</body>
+</html>
