@@ -3,8 +3,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: #000000; /* Black font color */
-    background-color: #ffdecb; /* gray background */
+    color: #ffffff; 
+    background-color: #000000; 
     margin: 30px;
     padding: 0;
 }
@@ -16,21 +16,21 @@ body {
 }
 
 h1, h2, h3, h4 {
-    background-color: #c36022; 
+    background-color: #000000; 
     color: #ffffff; 
-    border: 1px solid #0099d6;
+    border: 1px solid #1dd600;
     padding: 10px;
 }
 
 a {
-    color: #008CBA; 
+    color: #ffffff; 
     text-decoration: none;
 }
 
 a:hover {
-    color: #000000; 
+    color: #ffffff; 
 }
 
 a:visited {
-    color: #000000; 
+    color: #6ab62c; 
 }
